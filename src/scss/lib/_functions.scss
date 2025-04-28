@@ -53,7 +53,7 @@
 }
 
 // плавное изменение размера на заданном диапазоне ширины экрана (без медиазапросов, через clamp)
-@function fluid($max, $min, $maxWidth: 1320, $minWidth: 480) {
+@function fluid($max, $min, $maxWidth: 1800, $minWidth: 480) {
 	$slope: math.div(num($max - $min), num($maxWidth - $minWidth));
 	$yAxisIntersection: -$minWidth * $slope + $min;
 

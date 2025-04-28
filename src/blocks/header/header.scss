@@ -1,0 +1,152 @@
+@use 'lib' as *;
+
+.header {
+	$self: &;
+    padding-top: 80px;
+    padding-bottom: fluid(70px, 32px);
+
+    @include media("<=xxlg") {
+        padding-top: 40px;
+    }
+
+	&__container {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            transition: var(--transition);
+            &:hover { color: var(--purple); }
+        }
+	}
+
+	&__up {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        align-items: end;
+        padding-bottom: 16px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+        @include media("<=xlg") {
+            flex-direction: column;
+            align-items: start;
+            gap: 16px;
+        }
+	}
+
+	&__logo {
+        height: 36px;
+        width: auto;
+	}
+
+	&__content {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        gap: 32px;
+        justify-content: space-between;
+        width: 100%;
+
+        @include media("<=sm") {
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+            gap: 16px;
+        }
+	}
+
+	&__nav {
+        font-family: Arial;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+	}
+
+	&__contacts {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        font-family: Arial;
+        font-size: 24px;
+        font-weight: 700;
+        
+        @include media("<=lg") {
+            font-size: 16px;
+        }
+	}
+
+	&__catalog {
+        padding-top: 16px;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: Arial;
+
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+
+        svg {
+            width: 24px; height: 24px;
+            stroke: var(--light);
+        }
+	}
+
+	&__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        background: rgba(231, 231, 231, 0.25);
+        border: 1px solid var(--light);
+        padding: 10px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: var(--transition);
+
+        &:hover {
+            border: 1px solid var(--purple);
+        }
+	}
+
+	&__input {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+        input {
+            width: 100%; height: 100%;
+            padding: 12.5px 16px;
+            background: rgba(231, 231, 231, 0.25);
+            color: var(--light);
+            outline: none;
+            border: 1px solid var(--light);
+            border-radius: 4px;
+            transition: var(--transition);
+            padding-right: 48px;
+
+            &::placeholder {
+                color: rgba(71, 71, 71, 1);
+            }
+
+            &:focus {
+                border: 1px solid var(--purple);
+            }
+        }
+	}
+
+	&__input-button {
+        position: absolute;
+        top: 50%; right: 16px;
+        transform: translate(0, -50%);
+        width: 24px; height: 24px;
+        cursor: pointer;
+
+        svg {
+            width: 100%; height: 100%;
+            stroke: var(--light);
+            fill: transparent;
+        }
+	}
+
+}

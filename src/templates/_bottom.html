@@ -1,8 +1,53 @@
 <footer id="footer" class="footer"> 
-    <div class="footer__container container"></div>
+    <div class="footer__container container">
+        <div class="footer__column footer__column_left">
+            <img src="./img/logo.svg" alt="" class="footer__logo">
+            <div class="footer__contacts">
+                <a href="#">
+                    <svg><use xlink:href="#telegram"></use></svg>
+                </a>
+                <a href="#">
+                    <svg><use xlink:href="#youtube"></use></svg>
+                </a>
+                <a href="#">
+                    <svg><use xlink:href="#vkontakte"></use></svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer__column footer__column_info">
+            <h3 class="footer__title">Каталог</h3>
+            <div class="footer__row footer__row_button">
+                <h5 class="footer__row-title">Новости / О нас</h5>
+                <button class="footer__btn btn">Запросить звонок</button>
+            </div>
+            <div class="footer__row footer__row_contacts">
+                <div class="footer__row-column">
+                    <div class="footer__contact">
+                        <h5 class="footer__contact-title">Почта</h5>
+                        <a href="tel:#">hello@logoipsum.com</a>
+                    </div>
+                </div>
+                <div class="footer__row-column footer__row-column_tel">
+                    <div class="footer__contact">
+                        <h5 class="footer__contact-title">New York</h5>
+                        <a href="tel:#">(303) 555-0105</a>
+                    </div>
+                    <div class="footer__contact">
+                        <h5 class="footer__contact-title">London</h5>
+                        <a href="tel:#">(239) 555-0108</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__row footer__row_info">
+                <span>SERVER GUIDE© 2025 — Copyright</span>
+                <span>Юридическая информация</span>
+            </div>
+        </div>
+    </div>
 </footer> 
 
 @@include("_sprite.svg")
+
 <script src="common.js?v=0"></script> 
 </body> 
 </html>

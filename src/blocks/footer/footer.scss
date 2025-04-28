@@ -1,0 +1,208 @@
+@use 'lib' as *;
+
+.footer {
+	$self: &;
+    padding: 80px 0px;
+    background: #000;
+    font-family: Arial;
+
+    @include media("<=xs") {
+        padding: 40px 0px;
+    }
+
+	&__container.container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 24px;
+
+        @include media("<=md") {
+            flex-direction: column;
+            justify-content: start;
+        }
+
+        @include media("<=xs") {
+            width: min(var(--container), calc(100% - 18px * 2));
+        }
+	}
+
+	&__column {
+
+		&_left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            width: 100%;
+            max-width: 435px;
+
+            @include media("<=md") {
+                flex-direction: row;
+                align-items: center;
+                max-width: none;
+                gap: 24px;
+            }
+
+            @include media("<=xs") {
+                flex-direction: column;
+                align-items: start;
+                margin-bottom: 32px;
+            }
+		}
+
+		&_info {
+            width: 100%;
+            max-width: 689px;
+		}
+	}
+
+	&__logo {
+        height: 36px;
+        width: auto;
+	}
+
+	&__contacts {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+
+        a {
+            width: 40px; height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 auto;
+            border-radius: 100%;
+            border: 1px solid #fff;
+            transition: var(--transition);
+
+            svg {
+                width: 20px;
+                fill: #fff;
+                transition: var(--transition);
+            }
+
+            &:hover {
+                border: 1px solid var(--purple);
+
+                svg {
+                    fill: var(--purple);
+                }
+            }
+        }
+
+        
+	}
+
+	&__title {
+        margin-bottom: 80px;
+        font-size: 28px;
+        text-transform: uppercase;
+        font-weight: 500;
+
+        @include media("<=xs") {
+            margin-bottom: 32px;
+        }
+	}
+
+	&__row {
+        &-column_tel {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            a {
+                font-size: 32px;
+                font-weight: 700;
+
+                @include media("<=lg") {
+                    font-size: 24px !important;
+                }
+
+            }
+        }
+
+        &_info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 12px;
+            color: rgba(179, 179, 179, 1);
+
+            @include media("<=xs") {
+                flex-direction: column;
+                gap: 16px;
+            }
+        }
+
+        &_button {
+            margin-bottom: 80px;
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: space-between;
+
+            @include media("<=xs") {
+                flex-direction: column;
+                margin-bottom: 32px;
+            }
+        }
+
+        &_contacts {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px 16px;
+            margin-bottom: 128px;
+
+            @include media("<=xs") {
+                grid-template-columns: 1fr;
+                margin-bottom: 60px;
+            }
+        }
+	}
+
+	&__row-title {
+        color: rgba(179, 179, 179, 1);
+        font-size: 14px;
+
+        @include media("<=xs") {
+            margin-bottom: 24px;
+        }
+	}
+
+	&__btn {
+        font-size: 16px;
+        font-weight: 400;
+        color: #FFF;
+        padding: 12px 32px;
+        background: var(--purple);
+        cursor: pointer;
+        transition: var(--transition);
+
+        &:hover {
+            background: #fff;
+            color: var(--purple);
+        }
+
+        @include media("<=xs") {
+            width: 100%;
+        }
+	}
+
+	&__contact {
+
+        @include media("<=xs") {
+            a {
+                font-size: 14px;
+            }
+        }
+        
+	}
+
+	&__contact-title {
+        color: rgba(179, 179, 179, 1);
+        font-size: 14px;
+        margin-bottom: 8px;
+	}
+
+}
