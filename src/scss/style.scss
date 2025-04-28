@@ -1,0 +1,92 @@
+@use 'lib' as * with(
+	$breakpoints: (
+		'xxxs': 360px,
+		'xxs': 480px,
+		'xs': 640px,
+		'sm': 780px,
+		'md': 960px,
+		'lg': 1100px,
+		'xlg': 1280px,
+		'xxlg': 1440px,
+		'xxxlg': 1680px,
+		'xxxxlg': 1928px,
+		'container-with-padding': calc(1320px + 24px * 2)
+	)
+);
+
+@use "../blocks/**/*.scss";
+@use "../../node_modules/swiper/swiper";
+@use "../../node_modules/swiper/modules/effect-fade";
+@use "../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.css";
+
+@include font-face("RubikMonoOne-Regular", "Rubik", 400);
+
+// Browsersync mark
+#__bs_notify__ { 
+	background-color: rgba(27, 32, 50, 0.4) !important;
+	color: rgba(250, 250, 250, 0.6) !important;
+}
+
+// Include breakpoints badge
+// body { @include screen-media(); }
+
+body, html {
+	// scrollbar-gutter: stable;
+	// scroll-behavior: smooth;	
+	box-sizing: border-box;
+	background-color: var(--grey);
+	font-size: 24px;
+	color: var(--light);
+	font-family: "Rubik", sans-serif;
+	line-height: 1.2;
+	font-weight: 400;
+	min-height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.footer {
+	flex: 0 0 auto; 
+	margin-top: auto; 
+}
+
+.sprite {
+	display: none;
+}
+
+p { margin-bottom: 10px; }
+strong { font-weight: bold; }
+em { font-style: italic; }
+
+.container {
+	$self: &;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+	width: min(var(--container), calc(100% - 12px * 2));
+	
+	&_abs {
+		position: absolute;
+		left: max(var(--gap), calc((100% - var(--container)) / 2));
+	}
+	
+	&_right {
+		width: min(calc(100% - var(--gap)), calc(100% - (100% - var(--container)) / 2));
+		margin-right: unset;
+	}
+	
+	&_left {
+		width: min(calc(100% - var(--gap)), calc(100% - (100% - var(--container)) / 2));
+		margin-left: unset;
+	}
+	
+	&__half {
+		flex-shrink: 0;
+		width: min(calc(var(--container) / 2), 50%);
+	}
+
+	&__full {
+		flex-shrink: 0;
+		width: min(var(--container), 100%);
+	}
+}
