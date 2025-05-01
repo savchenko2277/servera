@@ -2,13 +2,153 @@
 
 .solutions {
 	$self: &;
+    padding-bottom: fluid(50px, 20px);
+    overflow-x: hidden;
 
-	&__container {
-
+	&__container.container {
+        overflow:visible;
 	}
 
 	&__title {
+        margin-bottom: 32px;
+        position: relative;
+        z-index: 1;
 
+        @include media("<=xs") {
+            display: none;
+        }
+	}
+
+	&__columns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 27px;
+
+        @include media("<=sm") {
+            grid-template-columns: 1fr;
+        }
+	}
+
+	&__info {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding-bottom: 50px;
+
+        @include media("<=sm") {
+            padding-bottom: 0;
+            gap: 6px;
+        }
+	}
+
+	&__element {
+        background: rgba(231, 231, 231, 0.25);
+        padding: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        height: 203px;
+        position: relative;
+        border-radius: 4px;
+        overflow: hidden;
+        border: 1px solid var(--purple);
+        max-width: 686px;
+        transition: var(--transition);
+
+        &:hover {
+            background: var(--purple);
+            color: var(--light);
+        }
+
+        @include media("<=xs") {
+            height: 135px;
+            padding: 16px;
+        }
+	}
+
+	&__element-title {
+        max-width: 349px;
+        font-size: 36px;
+        text-transform: uppercase;
+
+        @include media("<=xs") {
+            font-size: 24px;
+        }
+	}
+
+	&__element-img {
+        position: absolute;
+        top: 50%; right: 0;
+        height: 100%; width: auto;
+        transform: translateY(-50%);
+
+        @include media("<=sm") {
+            opacity: 0.2;
+            height: 70%;
+        }
+	}
+
+	&__server {
+        display: flex;
+        height: 100%;
+        position: relative;
+
+        @include media("<=sm") {
+            order: -1;
+        }
+
+        @include media("<=sm") {
+            flex-direction: column;
+        }
+	}
+
+	&__server-img {
+        position: absolute;
+        left: 0; bottom: 0;
+        z-index: 0;
+        padding: 30px 0px;
+        min-width: fluid(980px, 380px, 1800px, 780px);
+        object-fit: cover;
+
+        @include media("<=sm") {
+            min-width: 0;
+            width: 120vw;
+            height: 308px;
+            object-fit: fill;
+            margin-left: -20px;
+            position: static;
+        }
+	}
+
+	&__link {
+        margin-top: auto;
+        font-family: Arial;
+        font-size: 24px;
+        font-weight: 400;
+        text-decoration: underline;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+
+        &:hover::after {
+            margin-left: 16px;
+        }
+        
+        &::after {
+            content: '';
+            display: block;
+            width: 25px; height: 20px;
+            background: url(./img/arrow-right.svg) center center / contain no-repeat;
+            margin-left: 8px;
+            transition: var(--transition);
+        }
+
+        @include media("<=xs") {
+            font-size: 16px;
+        }
 	}
 
 }

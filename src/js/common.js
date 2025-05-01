@@ -1,5 +1,7 @@
 import "./polyfills.js";
 import "./blocks.js";
+import { Fancybox } from "@fancyapps/ui";
+
 // import "../../node_modules/swiped-events/dist/swiped-events.min.js";
 
 /* Тут можно писать код общий для всего проекта и требующий единого пространства имен */
@@ -24,4 +26,6 @@ import "./blocks.js";
 //       }
 //     });
 //   });
+  
+Fancybox.bind("[data-fancybox]");
   

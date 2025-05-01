@@ -1,0 +1,78 @@
+@@include("_head.html", {"id":"home"}) 
+@@include("_header.html") 
+
+<main class="main"> 
+
+    <section class="about">
+        <div class="about__container container">
+            <h3 class="about__title title">О нас</h3>
+            <div class="about__cards">
+                <div class="about__card">
+                    <img src="./img/russia.webp" alt="" class="about__card-img">
+                    <h5 class="about__card-title">Сделано <br> в России</h5>
+                </div>
+                <div class="about__card">
+                    <img src="./img/5.webp" alt="" class="about__card-img">
+                    <h5 class="about__card-title">лет на рынке</h5>
+                </div>
+                <div class="about__card">
+                    <img src="./img/50+.webp" alt="" class="about__card-img">
+                    <h5 class="about__card-title">уникальных дизайнов</h5>
+                </div>
+                <div class="about__card">
+                    <img src="./img/70+.webp" alt="" class="about__card-img">
+                    <h5 class="about__card-title">Продуктов в реестре МПТ</h5>
+                </div>
+            </div>
+            <div class="about__text">
+                <p>
+                    Компания «...» специализируется на предоставлении высококачественных серверных решений, идеально подходящих для любых задач и масштабов бизнеса. Мы предлагаем полный цикл услуг: от подбора подходящего оборудования до его настройки и интеграции в вашу инфраструктуру.
+                </p>
+                <p>
+                    Наша миссия — обеспечивать клиентов надежными и эффективными серверными решениями, способствующими росту и развитию их бизнеса. Мы ценим инновации, качество и долгосрочное партнерство, стремясь превосходить ожидания клиентов.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    @@include("team.html")
+
+    @@include("partners.html")
+
+    @@include("certificates.html")
+
+    @@include("reviews.html")
+
+    <section class="form form_page">
+        <div class="form__container">
+            <img src="./img/graviton-logo.svg" alt="" class="form__logo">
+            <h3 class="form__title">Готовы стать частью команды?</h3>
+            <h5 class="form__subtitle">Оставьте заявку прямо сейчас, и мы свяжемся с вами в ближайшее время!</h5>
+            <form class="form__body">
+                <label class="form__label">
+                    <input placeholder="Название компании" type="text">
+                </label>
+                <label class="form__label">
+                    <input placeholder="Контактное лицо" type="text">
+                </label>
+                <label class="form__label">
+                    <input placeholder="Телефон" type="text">
+                </label>
+                <label class="form__label">
+                    <input placeholder="Электронная почта" type="text">
+                </label>
+                <label class="form__label">
+                    <input placeholder="Формат сотрудничества" type="text">
+                </label>
+                <label class="form__label form__label_textarea">
+                    <textarea placeholder="Сообщение"></textarea>
+                </label>
+                <button class="form__sumbit">Начать проект</button>
+            </form>
+        </div>
+    </section>
+
+</main> 
+
+@@include("_modals.html")
+@@include("_bottom.html")

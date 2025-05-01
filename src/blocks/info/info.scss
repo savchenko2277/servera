@@ -1,0 +1,71 @@
+@use 'lib' as *;
+
+.info {
+	$self: &;
+
+    font-family: Arial;
+    padding-bottom: fluid(140px, 70px);
+
+    h3 {
+        font-size: fluid(48px, 32px);
+        font-weight: 400;
+        text-transform: uppercase;
+        word-wrap: break-word;
+    }
+
+    p {
+        font-size: fluid(32px, 16px);
+        font-weight: 400;
+        max-width: 1179px;
+        margin: 0;
+    }
+
+    ul {
+        
+        li {
+            font-size: fluid(24px, 16px);
+            list-style: inside;
+            display: flex;
+            flex-direction: row;
+            line-height: 140%;
+            
+            &::before {
+                content: '';
+                display: block;
+                width: 5px; height: 5px;
+                border-radius: 100%;
+                background: #fff;
+                margin-top: 12px;
+                margin-right: 16px;
+                flex: 0 0 auto;
+            }
+        }
+    }
+
+    &__content {
+        max-width: 1340px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+	&__columns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 100px;
+
+        @include media("<=lg") {
+            grid-template-columns: 1fr;
+        }
+	}
+
+	&__column {
+        strong {
+            font-size: fluid(32px, 24px);
+            font-weight: 700;
+            margin-bottom: 35px;
+            display: block;
+        }
+	}
+
+}

@@ -105,8 +105,10 @@ They might well be outsourced to an external stylesheet of course.
 -->
 
 <style>
+ .svg-close-dims { width: 24px; height: 24px; }
  .svg-menu-dims { width: 24px; height: 24px; }
  .svg-search-dims { width: 24px; height: 24px; }
+ .svg-star-dims { width: 20px; height: 19px; }
  .svg-telegram-dims { width: 24px; height: 25px; }
  .svg-vkontakte-dims { width: 20px; height: 17px; }
  .svg-youtube-dims { width: 20px; height: 15px; }
@@ -131,8 +133,10 @@ for further details on how to create this embeddable sprite variant.
 -->
 
 <svg width="0" height="0" style="position:absolute">
+     <symbol viewBox="0 0 24 24" id="close" xmlns="http://www.w3.org/2000/svg"><path d="M18 6 6 18M6 6l12 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
      <symbol viewBox="0 0 24 24" id="menu" xmlns="http://www.w3.org/2000/svg"><path d="M17 10H3M21 6H3M21 14H3M17 18H3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
      <symbol viewBox="0 0 24 24" id="search" xmlns="http://www.w3.org/2000/svg"><path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM21 21l-4.35-4.35" stroke-width="2" stroke-linecap="square"/></symbol>
+     <symbol viewBox="0 0 20 19" id="star" xmlns="http://www.w3.org/2000/svg"><path d="M9.07.612c.345-.816 1.515-.816 1.86 0l2.028 4.82c.145.343.473.579.849.608l5.266.417c.892.071 1.254 1.171.574 1.746L15.635 11.6a.987.987 0 0 0-.324.985l1.225 5.077c.208.86-.74 1.54-1.503 1.08l-4.508-2.721a1.016 1.016 0 0 0-1.05 0l-4.508 2.72c-.764.461-1.711-.219-1.503-1.079l1.225-5.077a.987.987 0 0 0-.324-.985L.353 8.203c-.68-.575-.318-1.675.574-1.746l5.266-.417c.377-.03.704-.265.85-.609L9.07.612Z"/></symbol>
      <symbol viewBox="0 0 24 25" id="telegram" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.237 11.694c4.832-2.117 8.054-3.513 9.666-4.187 4.603-1.925 5.56-2.26 6.183-2.27.137-.003.444.031.642.193a.704.704 0 0 1 .236.452c.022.13.05.425.028.656-.25 2.635-1.329 9.03-1.878 11.982-.232 1.25-.69 1.668-1.133 1.709-.962.089-1.693-.64-2.625-1.254-1.459-.962-2.283-1.56-3.7-2.499-1.636-1.084-.575-1.68.358-2.654.244-.255 4.485-4.134 4.567-4.486.01-.044.02-.208-.077-.294-.097-.087-.24-.057-.343-.034-.147.034-2.477 1.583-6.992 4.647-.661.457-1.26.68-1.797.668-.592-.013-1.73-.337-2.577-.614-1.038-.339-1.862-.518-1.79-1.095.037-.3.448-.607 1.232-.92Z"/></symbol>
      <symbol viewBox="0 0 20 17" id="vkontakte" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.938 2.236H.75c-.625 0-.75.297-.75.626 0 .585.741 3.49 3.454 7.33 1.807 2.623 4.355 4.044 6.673 4.044 1.39 0 1.563-.316 1.563-.859v-1.982c0-.632.132-.758.572-.758.325 0 .88.163 2.18 1.428 1.483 1.5 1.727 2.171 2.561 2.171h2.189c.625 0 .938-.316.757-.94-.197-.62-.905-1.521-1.845-2.59-.51-.608-1.275-1.264-1.507-1.592-.325-.421-.232-.608 0-.983 0 0 2.666-3.794 2.944-5.082.14-.468 0-.813-.662-.813H16.69c-.556 0-.813.297-.952.626 0 0-1.112 2.74-2.689 4.519-.51.515-.742.68-1.02.68-.139 0-.34-.165-.34-.633v-4.38c0-.561-.161-.812-.625-.812h-3.44c-.346 0-.555.261-.555.509 0 .532.788.655.869 2.154v3.255c0 .714-.127.844-.406.844-.741 0-2.546-2.753-3.616-5.902-.21-.612-.42-.86-.98-.86Z"/></symbol>
      <symbol viewBox="0 0 20 15" id="youtube" xmlns="http://www.w3.org/2000/svg"><path d="M19.593 2.437a2.503 2.503 0 0 0-1.76-1.764c-1.566-.43-7.827-.437-7.827-.437S3.746.23 2.18.64A2.558 2.558 0 0 0 .416 2.416C.004 3.981 0 7.226 0 7.226s-.004 3.262.406 4.81c.23.857.904 1.533 1.761 1.764 1.581.43 7.825.436 7.825.436s6.26.007 7.825-.402a2.514 2.514 0 0 0 1.766-1.762c.414-1.563.417-4.808.417-4.808s.02-3.262-.407-4.827ZM8.004 10.233l.005-5.995 5.204 3.002-5.209 2.993Z"/></symbol>
@@ -162,6 +166,14 @@ embedded above. They may be styled via CSS.
             <h3>A) Inline SVG with embedded sprite</h3>
             <ul>
 
+             <li title="close">
+                    <div class="icon-box">
+                        <svg class="svg-close-dims">
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <h2>close, </h2>
+                </li>
              <li title="menu">
                     <div class="icon-box">
                         <svg class="svg-menu-dims">
@@ -177,6 +189,14 @@ embedded above. They may be styled via CSS.
                         </svg>
                     </div>
                     <h2>search, </h2>
+                </li>
+             <li title="star">
+                    <div class="icon-box">
+                        <svg class="svg-star-dims">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                    </div>
+                    <h2>star, </h2>
                 </li>
              <li title="telegram">
                     <div class="icon-box">
@@ -221,6 +241,14 @@ SVG sprite. They may be styled via CSS.
             <h3>B) Inline SVG with external sprite</h3>
             <ul>
 
+             <li title="close">
+                    <div class="icon-box">
+                        <svg class="svg-close-dims">
+                            <use xlink:href="_sprite.svg#close"></use>
+                        </svg>
+                    </div>
+                    <h2>close</h2>
+                </li>
              <li title="menu">
                     <div class="icon-box">
                         <svg class="svg-menu-dims">
@@ -236,6 +264,14 @@ SVG sprite. They may be styled via CSS.
                         </svg>
                     </div>
                     <h2>search</h2>
+                </li>
+             <li title="star">
+                    <div class="icon-box">
+                        <svg class="svg-star-dims">
+                            <use xlink:href="_sprite.svg#star"></use>
+                        </svg>
+                    </div>
+                    <h2>star</h2>
                 </li>
              <li title="telegram">
                     <div class="icon-box">
@@ -269,7 +305,7 @@ SVG sprite. They may be styled via CSS.
 
         </section>
         <footer>
-            <p>Generated at Mon, 28 Apr 2025 17:19:27 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
+            <p>Generated at Thu, 01 May 2025 22:54:05 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
         </footer>
     </body>
 </html>

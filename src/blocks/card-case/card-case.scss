@@ -1,0 +1,61 @@
+@use 'lib' as *;
+
+.card-case {
+	$self: &;
+
+    background: rgba(231, 231, 231, 0.25);
+    font-family: Arial;
+    position: relative;
+    border-radius: 4px;
+    transition: var(--transition);
+
+    &:hover {
+        background: var(--purple);
+        color: var(--light);
+    }
+
+	&__case-pumps {
+        padding: 15px 12px;
+        position: absolute;
+        top: 0; right: 0;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        gap: 4px;
+        
+        span {
+            font-size: 12px;
+            font-weight: 400;
+            border-radius: 12px;
+            padding: 0 4px;
+        }
+	}
+
+    &__case-info {
+        padding: 12px;
+    }
+
+	&__case-image {
+        height: 274px;
+        width: 100%;
+        object-fit: contain;
+	}
+
+	&__case-title {
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 4px;
+	}
+
+	&__case-subtitle {
+        font-size: 12px;
+        margin-bottom: 12px;
+	}
+
+	&__case-price {
+        font-size: 16px;
+	}
+
+}

@@ -1,0 +1,80 @@
+@use 'lib' as *;
+
+.team {
+	$self: &;
+
+    padding: fluid(60px, 30px) 0px;
+
+	&__container {
+
+	}
+
+	&__up {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        gap: 40px;
+        margin-bottom: 40px;
+
+        @include media("<=lg") {
+            flex-direction: column;
+            gap: 14px;
+        }
+	}
+
+	&__title {
+        flex: 0 0 auto;
+	}
+
+	&__text {
+        font-family: Arial;
+        max-width: 850px;
+        font-size: fluid(24px, 16px);
+	}
+
+	&__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        font-family: Arial;
+
+        @include media("<=xxlg") {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include media("<=lg") {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include media("<=xs") {
+            grid-template-columns: 1fr;
+        }
+	}
+
+	&__card {
+
+	}
+
+	&__image {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        object-position: top;
+        border: 2px solid var(--purple);
+        border-radius: 4px;
+        margin-bottom: 18px;
+        background: var(--purple);
+	}
+
+	&__card-title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 8px;
+	}
+
+	&__card-text {
+        font-size: 24px;
+	}
+
+}

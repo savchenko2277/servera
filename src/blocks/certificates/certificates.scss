@@ -1,0 +1,36 @@
+@use 'lib' as *;
+
+.certificates {
+	$self: &;
+    padding: fluid(60px, 20px) 0px;
+    overflow-x: hidden;
+
+	&__container {
+
+	}
+
+	&__title {
+        margin-bottom: 40px;
+	}
+
+	&__swiper.swiper {
+        overflow: visible;
+	}
+
+	&__case.swiper-slide {
+        aspect-ratio: 344 / 390;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 20px;
+        background: rgba(111, 111, 111, 0.28);
+        border: 2px solid var(--purple);
+        border-radius: 4px;
+        
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+	}
+
+}

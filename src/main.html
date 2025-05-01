@@ -2,7 +2,75 @@
 @@include("_header.html") 
 
 <main class="main"> 
+
     @@include("solutions.html")
+
+    <section class="about">
+        <div class="about__container container">
+            <h3 class="about__title title">Предназначен для крупных предприятий и государственных организаций</h3>
+            <div class="about__cards">
+                <div class="about__card">
+                    <img src="./img/russia.webp" alt="" class="about__card-img">
+                    <h5 class="about__card-title">Сделано <br> в России</h5>
+                </div>
+                <div class="about__card">
+                    <img src="./img/5.webp" alt="" class="about__card-img">
+                    <h5 class="about__card-title">лет на рынке</h5>
+                </div>
+                <div class="about__card">
+                    <img src="./img/50+.webp" alt="" class="about__card-img">
+                    <h5 class="about__card-title">уникальных дизайнов</h5>
+                </div>
+                <div class="about__card">
+                    <img src="./img/70+.webp" alt="" class="about__card-img">
+                    <h5 class="about__card-title">Продуктов в реестре МПТ</h5>
+                </div>
+            </div>
+            <div class="about__text">
+                <p>
+                    Продукция разрабатывается и производится на территории Российской Федерации, включена в Единый реестр российской радиоэлектронной продукции Минпромторга России, а программно-технические комплексы на базе программного обеспечения - из реестра Российской Федерации. Также разрабатываются Минцифры РФ.
+                </p>
+                <p>
+                    Продукция соответствует ФЗ-44 и ФЗ-223, сертифицирована ТР ТС, МПТ, РЭП, Минсвязи. Сервисное обслуживание продукции осуществляется по всей России, как в специализированных центрах, так и на местах эксплуатации.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    @@include("leaders.html")
+
+    <section class="categories">
+        <div class="categories__container container">
+            <h3 class="categories__title title">ПОПУЛЯРНЫЕ КАТЕГОРИИ</h3>
+            <div class="categories__cards">
+                <a href="#" class="categories__card">
+                    <h5 class="categories__card-title">Сервера для 1С</h5>
+                </a>
+                <a href="#" class="categories__card">
+                    <h5 class="categories__card-title">Файловое хранилище</h5>
+                </a>
+                <a href="#" class="categories__card">
+                    <h5 class="categories__card-title">Базы данных</h5>
+                </a>
+                <a href="#" class="categories__card">
+                    <h5 class="categories__card-title">Виртуализация</h5>
+                </a>
+                <a href="#" class="categories__card">
+                    <h5 class="categories__card-title">Видеонаблюдение</h5>
+                </a>
+                <a href="#" class="categories__card">
+                    <h5 class="categories__card-title">Терминальные сервера</h5>
+                </a>
+            </div>
+            <a href="#" class="categories__button">
+                Найти решение
+                <img src="./img/arrow-right.svg" alt="">
+            </a>
+        </div>
+    </section>
+
+    @@include("partners.html")
+
 </main>
 
 @@include("_bottom.html")

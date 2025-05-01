@@ -1,0 +1,738 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+	<link rel="shortcut icon" href="images/favicon.ico"> 
+	<link rel="stylesheet" href="style.css?v=1746141027911"> 
+	<title></title> 
+</head> 
+<body id="home"> 
+<header class="header">
+    <div class="header__container container">
+        <div class="header__up">
+            <img src="./img/logo.svg" alt="" class="header__logo">
+            <div class="header__content">
+                <nav class="header__nav">
+                    <a href="">О нас</a>
+                    <a href="">Каталог</a>
+                    <a href="">Новости</a>
+                </nav>
+                <div class="header__contacts">
+                    <a href="tel:#">(303) 555-0105</a>
+                    <a href="tel:#">(239) 555-0108</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__catalog">
+            <div class="header__button">
+                <svg><use xlink:href="#menu"></use></svg>
+                Catalog
+            </div>
+            <div class="header__input">
+                <input placeholder="Find a solution" type="text">
+                <div class="header__input-button">
+                    <svg><use xlink:href="#search"></use></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</header> 
+
+<main class="main"> 
+    <section data-catalog-js class="catalog">
+        <div class="catalog__container container">
+            <h3 class="catalog__title title">Сервера под любые задачи</h3>
+            <div class="catalog__nav">
+                <div class="catalog__nav-scroll">
+                    <button class="catalog__nav-button catalog__open">
+                        <svg><use xlink:href="#menu"></use></svg>
+                        <svg><use xlink:href="#close"></use></svg>
+                         Фильтр
+                    </button>
+                    <button class="catalog__nav-button selected">1С</button>
+                    <button class="catalog__nav-button">Файловый</button>
+                    <button class="catalog__nav-button">Офис</button>
+                    <button class="catalog__nav-button">База данных</button>
+                    <button class="catalog__nav-button">Виртуализация</button>
+                    <button class="catalog__nav-button">Видеонаблюдение</button>
+                    <button class="catalog__nav-button">Терминальный</button>
+                </div>
+
+                <div class="catalog__filters-mobile">
+                    <button class="catalog__filters-close">
+                        <svg><use xlink:href="#close"></use></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="catalog__body">
+                <div class="catalog__filters">
+                    <div class="catalog__filter catalog__filter_range">
+                        <h5 class="catalog__filter-title">Бюджет</h5>
+                        <div class="catalog__filter-body">
+                            <div class="catalog__filter-input">
+                                <span>от</span><input placeholder="0" maxlength="8" type="text">
+                            </div>
+                            <div class="catalog__filter-input">
+                                <span>до</span><input placeholder="59 987 888" maxlength="8" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__filter catalog__filter_checkboxes">
+                        <h5 class="catalog__filter-title">Форм-фактор</h5>
+                        <div class="catalog__filter-body">
+                            <label class="catalog__filter-checkbox">
+                                <span>Все</span><input type="checkbox" checked>
+                            </label>
+                            <label class="catalog__filter-checkbox">
+                                <span>1U</span><input type="checkbox">
+                            </label>
+                            <label class="catalog__filter-checkbox">
+                                <span>2U</span><input type="checkbox">
+                            </label>
+                            <label class="catalog__filter-checkbox">
+                                <span>4U</span><input type="checkbox">
+                            </label>
+                            <label class="catalog__filter-checkbox">
+                                <span>5U</span><input type="checkbox">
+                            </label>
+                            <label class="catalog__filter-checkbox">
+                                <span>6U</span><input type="checkbox">
+                            </label>
+                            <label class="catalog__filter-checkbox">
+                                <span>Tower</span><input type="checkbox">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="catalog__filter">
+                        <h5 class="catalog__filter-title">Модель товара</h5>
+                        <div class="catalog__filter-body">
+                            <select class="catalog__select">
+                                <option value="0">Выбрать</option>
+                                <option value="1">Ссу</option>
+                                <option value="2">Кмч</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="catalog__filter">
+                        <h5 class="catalog__filter-title">Поколение</h5>
+                        <div class="catalog__filter-body">
+                            <select class="catalog__select">
+                                <option value="0">Выбрать</option>
+                                <option value="1">Ссу</option>
+                                <option value="2">Кмч</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="catalog__filter catalog__filter_checkboxes catalog__filter_checkboxes-3">
+                        <h5 class="catalog__filter-title">Количество процессоров</h5>
+                        <div class="catalog__filter-body">
+                            <label class="catalog__filter-checkbox">
+                                <span>1</span><input type="checkbox">
+                            </label>
+                            <label class="catalog__filter-checkbox">
+                                <span>2</span><input type="checkbox">
+                            </label>
+                            <label class="catalog__filter-checkbox">
+                                <span>8</span><input type="checkbox">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="catalog__filter">
+                        <h5 class="catalog__filter-title">Частота процессора</h5>
+                        <div class="catalog__filter-body">
+                            <select class="catalog__select">
+                                <option value="0">Выбрать</option>
+                                <option value="1">Ссу</option>
+                                <option value="2">Кмч</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="catalog__filter catalog__filter_checkboxes catalog__filter_checkboxes-3">
+                        <h5 class="catalog__filter-title">Тип дисков</h5>
+                        <div class="catalog__filter-body">
+                            <label class="catalog__filter-checkbox">
+                                <span>2,5 SFF</span><input type="checkbox">
+                            </label>
+                            <label class="catalog__filter-checkbox">
+                                <span>3,5 LFF</span><input type="checkbox">
+                            </label>
+                            <label class="catalog__filter-checkbox">
+                                <span>NVMe</span><input type="checkbox">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="catalog__filter catalog__filter_range">
+                        <h5 class="catalog__filter-title">Максимальное количество дисков</h5>
+                        <div class="catalog__filter-body">
+                            <div class="catalog__filter-input">
+                                <span>от</span><input placeholder="0" maxlength="8" type="text">
+                            </div>
+                            <div class="catalog__filter-input">
+                                <span>до</span><input placeholder="59 987 888" maxlength="8" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__filter">
+                        <h5 class="catalog__filter-title">Модуль удаленного управления</h5>
+                        <div class="catalog__filter-body">
+                            <select class="catalog__select">
+                                <option value="0">Выбрать</option>
+                                <option value="1">Ссу</option>
+                                <option value="2">Кмч</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="catalog__filter">
+                        <h5 class="catalog__filter-title">Сетевая карта</h5>
+                        <div class="catalog__filter-body">
+                            <select class="catalog__select">
+                                <option value="0">Выбрать</option>
+                                <option value="1">Ссу</option>
+                                <option value="2">Кмч</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="catalog__filter">
+                        <h5 class="catalog__filter-title">RAID контроллер</h5>
+                        <div class="catalog__filter-body">
+                            <select class="catalog__select">
+                                <option value="0">Выбрать</option>
+                                <option value="1">Ссу</option>
+                                <option value="2">Кмч</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="catalog__filter catalog__filter_range">
+                        <h5 class="catalog__filter-title">Оперативная память</h5>
+                        <div class="catalog__filter-body">
+                            <div class="catalog__filter-input">
+                                <span>от</span><input placeholder="0" maxlength="8" type="text">
+                            </div>
+                            <div class="catalog__filter-input">
+                                <span>до</span><input placeholder="59 987 888" maxlength="8" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__filter catalog__filter_checkboxes catalog__filter_checkboxes-3">
+                        <h5 class="catalog__filter-title">Количество блоков питания</h5>
+                        <div class="catalog__filter-body">
+                            <label class="catalog__filter-checkbox">
+                                <span>1</span><input type="checkbox">
+                            </label>
+                            <label class="catalog__filter-checkbox">
+                                <span>2</span><input type="checkbox">
+                            </label>
+                            <label class="catalog__filter-checkbox">
+                                <span>4</span><input type="checkbox">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="catalog__filter catalog__filter_range">
+                        <h5 class="catalog__filter-title">Объем кеша контролера, мб</h5>
+                        <div class="catalog__filter-body">
+                            <div class="catalog__filter-input">
+                                <span>от</span><input placeholder="0" maxlength="8" type="text">
+                            </div>
+                            <div class="catalog__filter-input">
+                                <span>до</span><input placeholder="59 987 888" maxlength="8" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__cards">
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="card-case">
+                        <div class="card-case__case-pumps">
+                            <span style="color: rgba(52, 46, 46, 1); background: rgba(88, 208, 132, 1);">В наличии</span>
+                        </div>
+                        <img src="./img/server.webp" alt="" class="card-case__case-image">
+                        <div class="card-case__case-info">
+                            <h5 class="card-case__case-title">Graviton S1101I/S1041I</h5>
+                            <h6 class="card-case__case-subtitle">
+                                1x Intel Xeon E5-2643v3 (6C Cache L3 20M Cache 3.40GHz)  / 32 (2x 16GB) / 2"SSD 480GB / H730 / 2xБП 750W Hot Plug
+                            </h6>
+                            <span class="card-case__case-price">
+                                Цена по запросу
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button class="catalog__more">Показать еще</button>
+        </div>
+    </section>
+</main> 
+
+<div data-modal-js class="modal modal_callback">
+    <div class="modal__container">
+        <section class="form">
+            <div class="form__container">
+                <div data-modal-close class="modal__close"><svg><use xlink:href="#close"></use></svg></div>
+                <img src="./img/graviton-logo.svg" alt="" class="form__logo">
+                <h3 class="form__title">Запросите коммерческое предложение</h3>
+                <h5 class="form__subtitle">Оставьте заявку прямо сейчас, и мы свяжемся с вами в ближайшее время!</h5>
+                <form class="form__body">
+                    <label class="form__label">
+                        <input placeholder="Название компании" type="text">
+                    </label>
+                    <label class="form__label">
+                        <input placeholder="Контактное лицо" type="text">
+                    </label>
+                    <label class="form__label">
+                        <input placeholder="Телефон" type="text">
+                    </label>
+                    <label class="form__label">
+                        <input placeholder="Электронная почта" type="text">
+                    </label>
+                    <label class="form__label form__label_textarea">
+                        <textarea placeholder="Сообщение"></textarea>
+                    </label>
+                    <button class="form__sumbit">Начать проект</button>
+                </form>
+            </div>
+        </section>
+    </div>
+</div>
+<footer id="footer" class="footer"> 
+    <div class="footer__container container">
+        <div class="footer__column footer__column_left">
+            <img src="./img/logo.svg" alt="" class="footer__logo">
+            <div class="footer__contacts">
+                <a href="#">
+                    <svg><use xlink:href="#telegram"></use></svg>
+                </a>
+                <a href="#">
+                    <svg><use xlink:href="#youtube"></use></svg>
+                </a>
+                <a href="#">
+                    <svg><use xlink:href="#vkontakte"></use></svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer__column footer__column_info">
+            <h3 class="footer__title">Каталог</h3>
+            <div class="footer__row footer__row_button">
+                <h5 class="footer__row-title">Новости / О нас</h5>
+                <button data-modal-open=".modal_callback" class="footer__btn btn">Запросить звонок</button>
+            </div>
+            <div class="footer__row footer__row_contacts">
+                <div class="footer__row-column">
+                    <div class="footer__contact">
+                        <h5 class="footer__contact-title">Почта</h5>
+                        <a href="tel:#">hello@logoipsum.com</a>
+                    </div>
+                </div>
+                <div class="footer__row-column footer__row-column_tel">
+                    <div class="footer__contact">
+                        <h5 class="footer__contact-title">New York</h5>
+                        <a href="tel:#">(303) 555-0105</a>
+                    </div>
+                    <div class="footer__contact">
+                        <h5 class="footer__contact-title">London</h5>
+                        <a href="tel:#">(239) 555-0108</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__row footer__row_info">
+                <span>SERVER GUIDE© 2025 — Copyright</span>
+                <span>Юридическая информация</span>
+            </div>
+        </div>
+    </div>
+</footer> 
+
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 24 24" id="close" xmlns="http://www.w3.org/2000/svg"><path d="M18 6 6 18M6 6l12 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol viewBox="0 0 24 24" id="menu" xmlns="http://www.w3.org/2000/svg"><path d="M17 10H3M21 6H3M21 14H3M17 18H3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol viewBox="0 0 24 24" id="search" xmlns="http://www.w3.org/2000/svg"><path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM21 21l-4.35-4.35" stroke-width="2" stroke-linecap="square"/></symbol><symbol viewBox="0 0 20 19" id="star" xmlns="http://www.w3.org/2000/svg"><path d="M9.07.612c.345-.816 1.515-.816 1.86 0l2.028 4.82c.145.343.473.579.849.608l5.266.417c.892.071 1.254 1.171.574 1.746L15.635 11.6a.987.987 0 0 0-.324.985l1.225 5.077c.208.86-.74 1.54-1.503 1.08l-4.508-2.721a1.016 1.016 0 0 0-1.05 0l-4.508 2.72c-.764.461-1.711-.219-1.503-1.079l1.225-5.077a.987.987 0 0 0-.324-.985L.353 8.203c-.68-.575-.318-1.675.574-1.746l5.266-.417c.377-.03.704-.265.85-.609L9.07.612Z"/></symbol><symbol viewBox="0 0 24 25" id="telegram" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.237 11.694c4.832-2.117 8.054-3.513 9.666-4.187 4.603-1.925 5.56-2.26 6.183-2.27.137-.003.444.031.642.193a.704.704 0 0 1 .236.452c.022.13.05.425.028.656-.25 2.635-1.329 9.03-1.878 11.982-.232 1.25-.69 1.668-1.133 1.709-.962.089-1.693-.64-2.625-1.254-1.459-.962-2.283-1.56-3.7-2.499-1.636-1.084-.575-1.68.358-2.654.244-.255 4.485-4.134 4.567-4.486.01-.044.02-.208-.077-.294-.097-.087-.24-.057-.343-.034-.147.034-2.477 1.583-6.992 4.647-.661.457-1.26.68-1.797.668-.592-.013-1.73-.337-2.577-.614-1.038-.339-1.862-.518-1.79-1.095.037-.3.448-.607 1.232-.92Z"/></symbol><symbol viewBox="0 0 20 17" id="vkontakte" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.938 2.236H.75c-.625 0-.75.297-.75.626 0 .585.741 3.49 3.454 7.33 1.807 2.623 4.355 4.044 6.673 4.044 1.39 0 1.563-.316 1.563-.859v-1.982c0-.632.132-.758.572-.758.325 0 .88.163 2.18 1.428 1.483 1.5 1.727 2.171 2.561 2.171h2.189c.625 0 .938-.316.757-.94-.197-.62-.905-1.521-1.845-2.59-.51-.608-1.275-1.264-1.507-1.592-.325-.421-.232-.608 0-.983 0 0 2.666-3.794 2.944-5.082.14-.468 0-.813-.662-.813H16.69c-.556 0-.813.297-.952.626 0 0-1.112 2.74-2.689 4.519-.51.515-.742.68-1.02.68-.139 0-.34-.165-.34-.633v-4.38c0-.561-.161-.812-.625-.812h-3.44c-.346 0-.555.261-.555.509 0 .532.788.655.869 2.154v3.255c0 .714-.127.844-.406.844-.741 0-2.546-2.753-3.616-5.902-.21-.612-.42-.86-.98-.86Z"/></symbol><symbol viewBox="0 0 20 15" id="youtube" xmlns="http://www.w3.org/2000/svg"><path d="M19.593 2.437a2.503 2.503 0 0 0-1.76-1.764c-1.566-.43-7.827-.437-7.827-.437S3.746.23 2.18.64A2.558 2.558 0 0 0 .416 2.416C.004 3.981 0 7.226 0 7.226s-.004 3.262.406 4.81c.23.857.904 1.533 1.761 1.764 1.581.43 7.825.436 7.825.436s6.26.007 7.825-.402a2.514 2.514 0 0 0 1.766-1.762c.414-1.563.417-4.808.417-4.808s.02-3.262-.407-4.827ZM8.004 10.233l.005-5.995 5.204 3.002-5.209 2.993Z"/></symbol></svg>
+
+<script src="common.js?v=1746141027911"></script> 
+</body> 
+</html>

@@ -3,12 +3,12 @@
 @use "mixins.scss" as *;
 
 .title {
-    letter-spacing: -5px;
-    line-height: 90%;
+    font-size: fluid(80px, 24px);
+    text-transform: uppercase;
 }
 
-.title-110 {
-    font-size: fluid(110px, 30px);
+.title-130 {
+    font-size: fluid(130px, 30px);
 }
 
 a {

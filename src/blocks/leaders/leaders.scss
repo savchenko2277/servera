@@ -1,0 +1,37 @@
+@use 'lib' as *;
+
+.leaders {
+	$self: &;
+    padding: dluid(70px, 30px) 0px;
+
+	&__container {
+
+	}
+
+	&__title {
+        margin-bottom: 20px;
+	}
+
+	&__cases {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+
+        @include media("<=xxlg") {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include media("<=lg") {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include media("<=sm") {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include media("<=xxs") {
+            grid-template-columns: 1fr;
+        }
+	}
+
+}

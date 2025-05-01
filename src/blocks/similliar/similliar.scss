@@ -1,0 +1,38 @@
+@use 'lib' as *;
+
+.similliar {
+	$self: &;
+    overflow-x: hidden;
+    font-family: Arial;
+    padding-bottom: fluid(70px, 30px);
+
+    &__title {
+        margin-bottom: 24px;
+        font-size: fluid(48px, 36px);
+    }
+
+	&__container {
+
+	}
+
+	&__swiper.swiper {
+        overflow: visible;
+	}
+
+    .swiper-slide {
+        width: 352px;
+
+        @include media("<=xxlg") {
+            width: 320px;
+        }
+
+        @include media("<=lg") {
+            width: 300px;
+        }
+
+        @include media("<=sm") {
+            width: 352px;
+        }
+    }
+
+}
